@@ -1,5 +1,6 @@
-a, b, c= map(int, input().split())
-print((a+b)%c)
-print(((a%c) + (b%c)) % c)
-print((a*c)%c)
-print(((a%c)*(b%c))%c)
+A, B, C= map(int, input().split())
+
+print((A+B)%C)
+print(((A%C) + (B%C))%C)
+print((A*B)%C)
+print(((A%C) * (B%C))%C)

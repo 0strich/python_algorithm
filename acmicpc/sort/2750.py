@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    nums = []
+    for i in range(n):
+        nums.append(int(input()))
+
+    nums.sort()
+
+    for i in nums:
+        print(i)

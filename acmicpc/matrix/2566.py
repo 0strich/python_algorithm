@@ -1,0 +1,22 @@
+import sys
+
+if __name__ == '__main__':
+    input = sys.stdin.readline
+    board = []
+
+    for _ in range(9):
+        board.append(list(map(int, input().split())))
+
+    x = 0
+    y = 0
+    MAX = -1
+
+    for i in range(9):
+        for j in range(9):
+            if board[i][j] > MAX:
+                MAX = board[i][j]
+                x = i + 1
+                y = j + 1
+
+    print(MAX)
+    print(x, y)
